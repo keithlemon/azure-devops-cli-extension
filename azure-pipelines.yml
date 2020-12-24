@@ -13,7 +13,7 @@ steps:
 - script: |
     cd /home/vsts/work/1/s/examples
     ls
-    chmod +x markStaleWorkItem.ps1
+    sudo chmod +x markStaleWorkItem.ps1
     ./markStaleWorkItem.ps1 -organization https://dev.azure.com/ava-modern-engineering-tests -assignedTo micaela.a.w.syjuco@avanade.com -daysUntilStale 30 -daysUntilClose 60
     echo Completed
   displayName: 'Run Az DevOps CLI'
