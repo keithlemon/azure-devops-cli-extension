@@ -12,6 +12,8 @@ pool:
 steps:
 - script: |
     cd /home/vsts/work/1/s/examples
-    ./home/vsts/work/1/s/examples/markStaleWorkItem.ps1 -organization https://dev.azure.com/ava-modern-engineering-tests -assignedTo micaela.a.w.syjuco@avanade.com -daysUntilStale 30 -daysUntilClose 60
+    ls
+    ./markStaleWorkItem.ps1 -organization https://dev.azure.com/ava-modern-engineering-tests -assignedTo micaela.a.w.syjuco@avanade.com -daysUntilStale 30 -daysUntilClose 60
     echo Completed
   displayName: 'Run Az DevOps CLI'
+  workingDirectory: /home/vsts/work/1/s/examples
