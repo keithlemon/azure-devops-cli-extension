@@ -9,6 +9,7 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+steps:
 - script: |
     cd /home/vsts/work/1/s
     ls
