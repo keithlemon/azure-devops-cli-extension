@@ -11,6 +11,8 @@ pool:
 
 steps:
 - script: |
+    export AZURE_DEVOPS_EXT_PAT=4muz3kipeq36edu6rb3xxszrwrm4bhtcjdce4qt32cgvpmaxtida
+    az devops login --org https://dev.azure.com/ava-modern-engineering-tests
     az devops project list --org https://dev.azure.com/ava-modern-engineering-tests
   displayName: 'Run Az DevOps CLI'
   workingDirectory: /home/vsts/work/1/s/examples
