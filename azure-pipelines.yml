@@ -11,6 +11,6 @@ pool:
 
 steps:
 - script: |
-    az devops project list
+    az devops project list --org https://dev.azure.com/ava-modern-engineering-tests
   displayName: 'Run Az DevOps CLI'
   workingDirectory: /home/vsts/work/1/s/examples
